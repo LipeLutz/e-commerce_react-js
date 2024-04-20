@@ -38,7 +38,7 @@ function App() {
         <BrowserRouter>
           <div id='modalOptions'>
             <div id='modalOptionsBTNS'>
-              <Link to='/'>
+              <Link to='/e-commerce_react-js'>
                 <button>Menu</button>
               </Link>
               <hr /> 
