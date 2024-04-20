@@ -1,0 +1,21 @@
+@media (min-width: 500px) and (max-width: 537px){
+    #input-txt{
+        width: 297px;
+        margin-left: 60px;
+    }
+}
+
+@media (min-width: 537px) and (max-width: 643px){
+    #input-txt{
+        width: 335px;
+        margin-left: 60px;
+    }
+}
+
+@media (min-width: 643px) and (max-width: 840px){
+    #input-txt{
+        width: 335px;
+        margin-left: 60px;
+    }
+}
+

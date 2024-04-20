@@ -1,0 +1,66 @@
+.Header{
+    background-color: rgb(0, 132, 255);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#h1Logo{
+    padding-left: 50px;
+}
+
+/*
+#cartButton {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 0;
+  color: yellow;
+}
+*/
+
+
+h1 > span{
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 0;
+    color: yellow;
+    font-weight: bold;
+}
+
+.material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 0;
+    color: yellow;
+    font-size: 1.8rem;
+}
+
+/*
+#favorites{
+    color: yellow;
+}
+*/
+
+nav{
+    padding-right: 50px;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    margin: 0px 30px 0px 20px;
+}
+
+#btnMenu{
+    cursor: pointer;
+    display: none;
+}

@@ -1,0 +1,222 @@
+@media (min-width: 500px) and (max-width: 668px){
+    #main-productPage{
+        width: 90%;
+        display: block;
+    }
+
+    #container-slide{
+        width: 100%;
+    }
+
+    #container-items{
+        width: 100%;
+    }
+
+    #container-info-products{
+        padding: 0px 0px 20px 20px;
+        /*width: 20%;*/
+    }
+
+    #productPageTitle{
+        font-size: 2.5rem;
+    }
+
+    #productPageTitle{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3rem;
+    }
+    
+    #productPagePrice{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }   
+    
+    #productPageSubdivision{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+    }
+    
+    #productPageRating{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.1rem;
+    }
+    
+    #productPage-BuyNow{
+        background-color: rgb(0, 132, 255);
+        color: white;
+        border-radius: 10px;
+        margin-right: 10px;
+        border:none;
+        height: 50px;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+    
+    #productPage-addToCart{
+        background-color: white;
+        color: rgb(0, 132, 255);
+        border-radius: 10px;
+        border: 1px solid rgba(0, 132, 255, 0.644);
+        height: 50px;
+        font-size: 1.1rem;
+        position: relative;
+        top: 6px;
+        cursor: pointer;
+    }
+
+    #productPageCart{
+        position: relative;
+        top: 5px;
+    }
+
+}
+
+@media (min-width: 668px) and (max-width: 1000px){
+    #main-productPage{
+        width: 600px;
+        display: block;
+    }
+
+    #container-slide{
+        width: 100%;
+    }
+
+    #container-items{
+        width: 500px;
+    }
+
+    #container-info-products{
+        padding: 0px 0px 20px 20px;
+    }
+
+    #productPageTitle{
+        font-size: 2.5rem;
+    }
+
+    #productPageTitle{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3rem;
+    }
+    
+    #productPagePrice{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }   
+    
+    #productPageSubdivision{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+    }
+    
+    #productPageRating{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.1rem;
+    }
+    
+    #productPage-BuyNow{
+        background-color: rgb(0, 132, 255);
+        color: white;
+        border-radius: 10px;
+        margin-right: 10px;
+        border:none;
+        height: 50px;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+    
+    #productPage-addToCart{
+        background-color: white;
+        color: rgb(0, 132, 255);
+        border-radius: 10px;
+        border: 1px solid rgba(0, 132, 255, 0.644);
+        height: 50px;
+        font-size: 1.1rem;
+        position: relative;
+        top: 6px;
+        cursor: pointer;
+    }
+
+    #productPageCart{
+        position: relative;
+        top: 5px;
+    }
+}
+
+@media (min-width: 1000px){
+    #main-productPage{
+        width: 900px;
+        display: flex;
+        margin: 5% auto;
+    }
+
+    #container-slide{
+        width: 50%;
+    }
+
+    #container-items{
+        width: 800px;
+    }
+    
+    #imgSize{
+        width: 400px;
+    }
+
+    #container-info-products{
+        padding: 0px 0px 20px 0px;
+    }
+
+    #productPageTitle{
+        font-size: 2.5rem;
+    }
+
+    #productPageTitle{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3rem;
+    }
+    
+    #productPagePrice{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }   
+    
+    #productPageSubdivision{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+    }
+    
+    #productPageRating{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.1rem;
+    }
+    
+    #productPage-BuyNow{
+        background-color: rgb(0, 132, 255);
+        color: white;
+        border-radius: 10px;
+        margin-right: 10px;
+        border:none;
+        height: 50px;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+    
+    #productPage-addToCart{
+        background-color: white;
+        color: rgb(0, 132, 255);
+        border-radius: 10px;
+        border: 1px solid rgba(0, 132, 255, 0.644);
+        height: 50px;
+        font-size: 1.1rem;
+        position: relative;
+        top: 6px;
+        cursor: pointer;
+    }
+
+    #productPageCart{
+        position: relative;
+        top: 5px;
+    }
+}

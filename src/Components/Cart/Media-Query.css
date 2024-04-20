@@ -1,0 +1,74 @@
+@media (min-width: 500px) and (max-width: 900px){
+    #main-cart{
+        width: 90%;
+    }
+    
+    #cart-item-finish{
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    #product{
+        width: 100%;
+    }
+
+    #resumo{
+        width: 100% !important;
+    }
+
+    #boxResumoDoPedido{
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px){
+    #main-cart{
+        width: 90%;
+    }
+
+    #product{
+        width: 65%;
+    }
+
+    #product-cart{
+        width: 100%;
+    }
+
+    #subTotal{
+        padding: 0px 20px 0px 20px !important;
+    }
+    
+    #entrega{
+        padding: 0px 20px 0px 20px !important;
+    }
+    
+    #cupom{
+        padding: 0px 20px 0px 20px !important;
+    }
+    
+    #total{ 
+        padding: 0px 20px 0px 20px !important;
+    }
+
+    #adicionarMaisProdutos{
+        width: 58% !important;
+        font-size: 0.9rem;
+    }
+
+    #fecharPedido{
+        width: 36% !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1475px){
+    #adicionarMaisProdutos{
+        width: 51% !important;
+        position: relative;
+        bottom: 9px;
+    }
+
+    #fecharPedido{
+        width: 44% !important;
+        font-size: 0.9rem;
+    }
+}

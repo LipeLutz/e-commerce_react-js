@@ -1,0 +1,109 @@
+#mainFavorites{
+    width: 60%;
+    display: flex;
+    align-items: center;
+
+    border: 1px solid rgba(0, 132, 255, 0.644);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    padding: 20px 0px;
+
+    margin: 50px auto;
+}
+
+#divFavoriteIMG{
+    margin: 0px 40px 0px 10px ;
+}
+
+#favoriteIMG{
+    width: 320px;
+    border-radius: 10px;
+}
+
+#FavoriteItemDescription{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#favotiriteItemTitle{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#favotiriteItemPrice{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#favotiriteItemSubdivision{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+}
+
+#favotiriteItemRating{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+#favoritePageBTNS{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0px 40px 0px 0px ;
+}
+
+#favoriteButtonBuyNow{
+    height: 50px;
+    width: 200px;
+    font-size: 1rem;
+
+    background-color: rgb(0, 132, 255);
+    color: white;
+    border-radius: 10px;
+    border:none;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#favoriteButtonAddCart{
+    height: 50px;
+    width: 200px;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    background-color: white;
+    color: rgb(0, 132, 255);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 132, 255, 0.644);
+    margin-bottom: 20px;
+    
+    cursor: pointer;
+}
+
+#btnLixeiraFav{
+    height: 50px;
+    width: 200px;
+    font-size: 1rem;
+
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+#lixeiraFav{
+    color: white;
+    font-size: 2.5rem;
+}
+
+#NAFavoriteProduct{
+    margin: 10% auto;
+    text-align: center;
+}
+
+
