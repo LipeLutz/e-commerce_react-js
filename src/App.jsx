@@ -55,7 +55,7 @@ function App() {
           <Header modalOptions={modalOptions}/>
 
           <Routes>
-            <Route path='/' element={<Products />}/>
+            <Route path='/e-commerce_react-js' element={<Products />}/>
             <Route path='/cart' element={<CartPage productsIDs={productsIDs}/>}/>
             <Route path='/products/:id' element={<ProductPage />} />
             <Route path='/favorites' element={<Favorites />}/>
