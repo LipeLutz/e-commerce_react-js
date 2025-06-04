@@ -38,7 +38,7 @@ export const Values = ( { CEP, cupom, frete } ) =>{
                 <hr />
                 <div id='subTotal'>
                     <p>Subtotal</p>
-                    <p>R$: {priceProducts}</p>
+                    <p>R$: {priceProducts.toFixed(2)}</p>
                 </div>
                 <hr />
 
@@ -57,12 +57,12 @@ export const Values = ( { CEP, cupom, frete } ) =>{
                 <div id='total'>
                     <div id='valorTotal'>
                         <p>Total</p>
-                        <p>R$: {valorTotal}</p>
+                        <p>R$: {valorTotal.toFixed(2)}</p>
                     </div>
                     
                     <div id="descontos">
-                        <p id="valorOriginal">R$: {priceProducts + frete}</p>
-                        <p id='valorComDesconto'>R$: {valorTotalComDesconto}</p>
+                        <p id="valorOriginal">R$: {priceProducts.toFixed(2) + frete}</p>
+                        <p id='valorComDesconto'>R$: {valorTotalComDesconto.toFixed(2)}</p>
                     </div>
                     <p id='spanValorComDesconto'>Valor com <span>10% de desconto</span> no Boleto ou PIX</p>
 
@@ -70,7 +70,7 @@ export const Values = ( { CEP, cupom, frete } ) =>{
             </div>
 
             <div id='btnsResumoPedido'>
-                <Link to="/">
+                <Link to="/e-commerce_react-js">
                     <button id='adicionarMaisProdutos'>Adicionar mais produtos</button>
                 </Link>
                 
@@ -80,11 +80,3 @@ export const Values = ( { CEP, cupom, frete } ) =>{
         </div>
     )
 }
-
-/*
-R$: {cupomDeDesconto > 0 ? (
-    novoPreco
-) : (
-    priceProducts
-)}
-*/

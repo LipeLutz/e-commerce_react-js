@@ -1,7 +1,7 @@
 import './Favorites.css'
 import './Media-Query.css'
 
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { ShopContext } from '../Context/ShopContext'
 import { useFetch } from '../../Utils/useFetch'
 import { Link } from 'react-router-dom'
@@ -10,12 +10,13 @@ export const Favorites = () =>{
 
     const { products } = useFetch()
     const { addToCart, removeFromFavs, favItems } = useContext(ShopContext)
-    console.log(favItems)
 
     const { setPriceProducts } = useContext(ShopContext)
-    
-    setPriceProducts(0)
 
+    useEffect(() =>{
+        setPriceProducts(0)
+    }, [products])
+    
     return(
         <div>
             {products.map( (product) =>{
@@ -32,7 +33,7 @@ export const Favorites = () =>{
                                 <Link id='Link' to={`/products/${product.id}`}>
                                     <div>
                                         <h1 id='favotiriteItemTitle'>{product.title}</h1>
-                                        <p id='favotiriteItemPrice'>R$: {product.price},00</p>
+                                        <p id='favotiriteItemPrice'>R$: {product.price}</p>
                                         <p id='favotiriteItemSubdivision'>{parseInt(product.price / 6)}</p>
                                         <p id='favotiriteItemRating'>{product.rating}</p>
                                     </div>
@@ -49,8 +50,6 @@ export const Favorites = () =>{
                                 </div>
                             </div>
                         </div>
-
-                        
                         
                     )}
                     

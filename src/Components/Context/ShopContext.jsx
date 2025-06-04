@@ -13,8 +13,6 @@ export const ShopContextProvider = (props) =>{
         for( let i = 1; i < products.length + 1; i++){
             cart[i] = 1
         }
-
-        //console.log(cart)
     
         return cart
     }
@@ -69,17 +67,6 @@ export const ShopContextProvider = (props) =>{
         addToFavs, 
         removeFromFavs
     }
-
-    /*
-    useEffect( () =>{
-        const guardarLocalStorage = (id) => localStorage.setItem(`produtosCarrinho`, JSON.stringify(id))
-        const pegarLocalStorage = () => JSON.parse(localStorage.getItem('produtosCarrinho')) ?? []
-       
-        const dbCLient = pegarLocalStorage()
-        dbCLient.push(cartItems)
-        guardarLocalStorage(cartItems)
-    }, [cartItems])
-    */
 
 
     return <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>

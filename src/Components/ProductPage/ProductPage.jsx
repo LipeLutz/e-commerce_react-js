@@ -15,15 +15,12 @@ export const ProductPage = () =>{
     const { id } = useParams()
     const { products } = useFetch()
     const [product, setProducts] = useState()
-    
-    setPriceProducts(0)
-
-    console.log(id)
 
     const { addToCart } = useContext(ShopContext)
 
     useEffect( () =>{
         setProducts(products[id - 1])
+        setPriceProducts(0)
     }, [id, products])
 
     let items = document.querySelectorAll('.pdtImage')
@@ -40,8 +37,6 @@ export const ProductPage = () =>{
         items = document.querySelectorAll('.pdtImage')
     }
 
-    
-
     return(
         <div id='main-productPage'>
 
@@ -55,8 +50,9 @@ export const ProductPage = () =>{
                 
                 <div id='container-items'>
                     {product !== undefined ? product.images.map((img) =>{
+                        console.log(product.price)
                         return (
-                            <div className='pdtImage'>
+                            <div className='pdtImage' key={id}>
                                 <img src={img} alt="" id='imgSize'/>
                             </div>
                         )}) : <Loading />}
@@ -71,7 +67,7 @@ export const ProductPage = () =>{
 
             <div id='container-info-products'>
                 <h1 id='productPageTitle'>{product && product.title}</h1>
-                <p id='productPagePrice'>R$: {product && product.price},00</p>
+                <p id='productPagePrice'>R$: {product && product.price}</p>
                 <p id='productPageSubdivision'>Em até 6x de {product && parseInt(product.price / 6)}</p>
                 <p id='productPageRating'>Avaliação: {product && product.rating}</p>
                 <button id='productPage-BuyNow'>Comprar agora</button>
@@ -86,53 +82,3 @@ export const ProductPage = () =>{
         </div>
     )
 }
-
-/*
-{product.images.map( (img) =>{
-    return (
-        <img src={img} alt="" />
-    )
-})}*/
-
-
-/*product && 
-                <div id='main-productPage'>
-                    <div id='pdt-Images'>
-                        <img src={product.images[0]} alt="" />
-                        <img src={product.images[1]} alt="" />
-                        <img src={product.images[2]} alt="" />
-                        <img src={product.images[3]} alt="" />
-                        <img src={product.images[4]} alt="" />
-                    </div>
-                    <div>
-                        <p>Título do produto: {product.title}
-                        <p>Avaliação: {product.rating}</p>
-                        <p>R$: {product.price},00</p>
-                        <p>Em até 6x de {parseFloat(product.price / 6)}</p>
-                        <button>Comprar</button>
-                        <button>
-                            <span   className="material-symbols-outlined">
-                                add_shopping_cart
-                            </span> Adicionar ao Carrinho
-                        </button>
-                    </p>
-                    </div>
-                </div>
-            */
-
-
-
-/*}
-                    <div>
-                        <p>Título do produto: {product && product.title}
-                        <p>Avaliação: {product && product.rating}</p>
-                        <p>R$: {product && product.price},00</p>
-                        <p>Em até 6x de {product && parseFloat(product.price / 6)}</p>
-                        <button>Comprar</button>
-                        <button>
-                            <span   className="material-symbols-outlined">
-                                add_shopping_cart
-                            </span> Adicionar ao Carrinho
-                        </button>
-                    </p>
-                    </div>*/               

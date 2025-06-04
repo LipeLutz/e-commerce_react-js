@@ -15,7 +15,6 @@
 #cart-item-finish{
    display: flex; 
    justify-content: space-between;
-   /* padding: 0px 20px 0px 20px; */
    gap: 40px;
 }
 

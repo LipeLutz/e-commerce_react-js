@@ -1,44 +1,43 @@
 import './Products.css'
 import './Media-Query.css'
 import { ItemCard } from '../ItemCard/ItemCard'
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useFetch } from '../../Utils/useFetch'
 import { ShopContext } from '../Context/ShopContext'
 
-export const Products = ( {} ) =>{
+export const Products = ({ }) => {
     const [query, setQuery] = useState()
 
     const { products } = useFetch()
 
     const { setPriceProducts } = useContext(ShopContext)
 
-    setPriceProducts(0)
+    useEffect(() =>{
+        setPriceProducts(0) 
+    })
 
-    const handleSubmit = (e) =>{
+    const handleSubmit = (e) => {
         e.preventDefault()
     }
 
-    const filteredProducts = products.filter( (product) => {
-        if(product.title.toLowerCase().includes(query)){
-            return product.title.toLowerCase().includes(query)
-        }
-
-        else if(product.brand.toLowerCase().includes(query)){
-            return product.brand.toLowerCase().includes(query)
-        }
+    const filteredProducts = products.filter((product) => {
+        const searchQuery = query?.toLowerCase() || ''
+        const titleMatch = product.title?.toLowerCase().includes(searchQuery);
+        const brandMatch = product.brand?.toLowerCase().includes(searchQuery);
+        return titleMatch || brandMatch;
     })
 
-    return(
+    return (
         <div className='main'>
             <div id='form'>
                 <form onSubmit={handleSubmit}>
-                    <input type="text" required onChange={ (e) => setQuery(e.target.value.toLowerCase())} id='input-txt'/>
-                    <input type="submit" value="Buscar" id='input-sbmt'/>
+                    <input type="text" required onChange={(e) => setQuery(e.target.value.toLowerCase())} id='input-txt' />
+                    <input type="submit" value="Buscar" id='input-sbmt' />
                 </form>
             </div>
 
             <div id='products'>
-                {filteredProducts.length === 0 ? products.map( product => (
+                {filteredProducts.length === 0 ? products.map(product => (
                     <ItemCard
                         key={product.id}
                         category={product.category}
@@ -49,7 +48,7 @@ export const Products = ( {} ) =>{
                         price={product.price}
                         rating={product.rating}
                     />
-                )) : filteredProducts.map( ftProduct => (
+                )) : filteredProducts.map(ftProduct => (
                     <ItemCard
                         key={ftProduct.id}
                         category={ftProduct.category}

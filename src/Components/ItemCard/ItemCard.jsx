@@ -20,7 +20,7 @@ export const ItemCard = ( { category, id, thumbnail, title, brand, price, rating
                             <div id='product-infos'>
                                 <p id='title'>{title}</p>
                                 <span>{brand}</span>
-                                <p id='price'>R$: {price},00</p>
+                                <p id='price'>R$: {price}</p>
                                 <p>Avaliação: {rating}</p>
                             </div>
                         </div>

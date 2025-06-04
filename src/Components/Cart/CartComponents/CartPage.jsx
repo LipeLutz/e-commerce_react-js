@@ -28,8 +28,6 @@ export const CartPage = ( ) =>{
         }
         
     }
-    
-    //const resumo = document.getElementById('resumo')
 
     const handleSubmitEntrega = (e) =>{
         e.preventDefault()

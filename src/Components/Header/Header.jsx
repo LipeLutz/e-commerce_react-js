@@ -15,8 +15,6 @@ export const Header = ({ modalOptions }) =>{
                 Store
             </h1>
             <nav>
-                {/* <a href="#">Sobre</a>
-                <a href="#">Fale conosco</a> */}
                 <Link to="/e-commerce_react-js">
                     <span className="material-symbols-outlined">
                         home

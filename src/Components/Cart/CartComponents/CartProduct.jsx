@@ -9,20 +9,6 @@ import { Link } from 'react-router-dom'
 export const CartProduct = ( { product } ) =>{
 
     const { removeFromCart, checkedOrNot } = useContext(ShopContext)
-
-    /*
-    const aumentaQuantidade = () =>{
-        setQuantidade(quantidade + 1)
-    }
-
-    const dimunirQuantidade = () =>{
-        if(quantidade >= 0){
-            setQuantidade(quantidade - 1)
-        } else{
-            setQuantidade(0)
-        }
-    }*/
-
     return(
         <div id='product-cart' key={product.id}>
                 <div id='aaa'>
@@ -36,15 +22,11 @@ export const CartProduct = ( { product } ) =>{
 
                     <div>
                         <p id='cart-pdtTitle'>{product.title}</p>
-
-                        {/*Quantidade: <button id='minus'>-</button>
-                        <input type="number" id="qtProducts" value={quantidade}/>
-    <button id='plus' >+</button>*/} 
                     </div>
                 </div>
 
             <div id='price-delete'>
-                <p>R$:{product.price},00</p>
+                <p>R$:{product.price}</p>
                 <button onClick={() => removeFromCart(product.id, product.price)}>
                     <span className="material-symbols-outlined" id='lixeira'>
                         delete
